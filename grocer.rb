@@ -1,13 +1,13 @@
 def find_item_by_name_in_collection(name, collection)
 counter = 0 
 
-while counter < collection.length do 
-  
-
-
-# if [:item] == name 
-#   collection 
-# end 
+while counter < collection.length  
+  if collection[counter][:item] == name 
+    return collection[counter] 
+  end
+  counter += 1 
+end
+nil 
 end
 
 def consolidate_cart(cart)
